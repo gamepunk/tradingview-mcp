@@ -37,10 +37,10 @@ If you're unsure whether a feature fits, open an issue to discuss before submitt
 ## Development
 
 ```bash
-npm install
-npm run lint      # eslint — the no-undef guard catches unfinished refactors
-npm run test:unit # offline unit tests (no TradingView needed)
-npm run test:e2e  # requires TradingView running with CDP on port 9222
+bun install
+bun run lint      # eslint — the no-undef guard catches unfinished refactors
+bun run test:unit # offline unit tests (no TradingView needed)
+bun run test:e2e  # requires TradingView running with CDP on port 9222
 tv status         # verify CDP connection (TradingView must be running)
 ```
 
@@ -51,7 +51,7 @@ Core functions take an optional `_deps` parameter resolved via `_resolve(_deps)`
 - Keep changes focused — one feature or fix per PR; bundled PRs (fix + config + docs) usually get closed in favor of the smallest equivalent
 - **Search open PRs before writing code** — popular bugs here have attracted 20+ duplicate fixes; if an open PR already covers it, comment there instead
 - Add tests for new functionality where possible
-- Ensure `npm run lint` and `npm run test:unit` pass
+- Ensure `bun run lint` and `bun run test:unit` pass
 - Test against a live TradingView Desktop instance before submitting, and describe in the PR body exactly what you ran and observed — PRs with real verification notes merge much faster
 
 ## Bug Reports

@@ -28,4 +28,4 @@ This project connects to a locally running TradingView Desktop instance via Chro
 - Only run TradingView with `--remote-debugging-port=9222` on localhost
 - Do not expose port 9222 to your network or the internet
 - Do not pipe `tv stream` output to external services without reviewing the data
-- Keep your TradingView Desktop and Node.js installations up to date
+- Keep your TradingView Desktop and Bun installations up to date

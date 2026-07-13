@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 // Pull current Pine Script source from TradingView editor → scripts/current.pine
 import CDP from 'chrome-remote-interface';
 import { writeFileSync } from 'fs';
